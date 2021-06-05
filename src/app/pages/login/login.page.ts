@@ -9,6 +9,7 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+
   @ViewChild(IonSlides) slides: IonSlides;
   public wavesPosition: number = 0;
   private wavesDifference: number = 100;
@@ -19,7 +20,7 @@ export class LoginPage implements OnInit {
   constructor(
     private authService: AuthService,
     private loadingCtrl: LoadingController,
-    private toastCtrl: ToastController,
+    private toastCtrl: ToastController
     //public keyboard: Keyboard
   ) { }
 
@@ -65,7 +66,7 @@ export class LoginPage implements OnInit {
   }
 
   async presentToast(message: string) {
-    const toast = await this.toastCtrl.create({ message, duration: 2000 });
+    const toast = await this.toastCtrl.create({ message, duration: 3000 });
     toast.present();
   }
 }

@@ -22,6 +22,6 @@ export class AuthService {
   }
 
   getAuth() {
-    return this.afa;
+    return this.afa.onAuthStateChanged;
   }
 }
