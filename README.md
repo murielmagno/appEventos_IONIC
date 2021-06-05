@@ -1,5 +1,4 @@
+O projeto foi montado com Firebase, é necessario fazer a instalação do mesmo.
+
 npm install firebase @angular/fire --save
 
-npm install cordova-plugin-ionic-keyboard
-
-npm install @ionic-native/keyboard
